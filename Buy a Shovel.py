@@ -1,0 +1,9 @@
+k, r = map(int, input().split())
+
+i = 1
+while True:
+    total = k * i
+    if total % 10 == 0 or total % 10 == r:
+        print(i)
+        break
+    i += 1
