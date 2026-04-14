@@ -1,0 +1,15 @@
+t=int(input())
+for i in range(t):
+    q=input()
+    q=list(q)
+    w=[]
+    
+    for i in q:
+        if i=='q':
+            w.append('p')
+        elif i=='p':
+            w.append('q')    
+        else:
+            w.append('w')
+    for i in range(len(q)):
+        print(w[-(i+1)],end='')
