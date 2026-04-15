@@ -1,0 +1,13 @@
+t = int(input())
+for i in range(t):
+    n = int(input())
+ 
+    count = 0
+    while n > 0:
+        if n >= 4:
+            n -= 4
+        else:
+            n -= 2
+        count += 1
+ 
+    print(count)
